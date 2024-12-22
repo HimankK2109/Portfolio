@@ -21,7 +21,7 @@ function AboutMe() {
             <img src={theme_pattern} alt="" className='absolute bottom-0 right-0 z-[-1] w-24 md:w-32 lg:w-40'/>
         </div>
 
-        <div style={bgGrains} className='bg-gray-950 rounded-3xl py-8 lg:py-0 lg:h-[80vh] px-5 w-[90%] grid grid-cols-1 md:grid-cols-2 space-y-2 md:space-y-0'>
+        <div style={bgGrains} className='bg-gray-950 rounded-3xl py-8 lg:py-0 min-h-[90vh] lg:h-[80vh] px-5 w-[90%] grid grid-cols-1 md:grid-cols-2 space-y-2 md:space-y-0'>
             {/* Banner Image */}
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.5 }} className='flex items-center justify-center m-4'>
                 <Canvas>
