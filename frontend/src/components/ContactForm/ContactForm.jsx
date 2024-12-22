@@ -13,26 +13,12 @@ function ContactForm() {
   const [status, setStatus] = useState("");
   const [isDisabled, setIsDisabled] = useState(true);
   const [cooldown, setCooldown] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(60);
 
   // Check if all fields are filled to enable the send button
   useEffect(() => {
     const { name, email, message } = data;
     setIsDisabled(!(name && email && message) || cooldown); // Disable the button if any field is empty
   }, [data, cooldown]);
-
-  useEffect(() => {
-    let interval;
-    if (cooldown && timeLeft > 0) {
-      interval = setInterval(() => {
-        setTimeLeft((prevTime) => prevTime - 1); // Decrease time left by 1 every second
-      }, 1000);
-    } else if (timeLeft === 0) {
-      clearInterval(interval);
-    }
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount or cooldown state change
-  }, [cooldown, timeLeft]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -135,7 +121,7 @@ function ContactForm() {
             </button>
             <p className="mt-4 text-sm text-center text-white/80">{status}</p>
             {cooldown && (
-              <p className="text-sm text-center text-white/80">Please wait {timeLeft} seconds before sending another message.</p>
+              <p className="text-sm text-center text-white/80">Please wait 60 seconds before sending another message.</p>
             )}
           </form>
         </motion.div>
