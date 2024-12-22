@@ -23,7 +23,7 @@ function AboutMe() {
 
         <div style={bgGrains} className='bg-gray-950 rounded-3xl py-8 lg:py-0 min-h-[90vh] lg:h-[80vh] px-5 w-[90%] grid grid-cols-1 md:grid-cols-2 space-y-2 md:space-y-0'>
             {/* Banner Image */}
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.5 }} className='flex items-center justify-center m-4'>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.5 }} className='flex items-center justify-center m-4 min-h-[50vh]'>
                 <Canvas>
                     <ambientLight intensity={7} />
                     <spotLight position={[10,10,10]} angle={0.15} penumbra={1} />
