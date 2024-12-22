@@ -12,6 +12,11 @@ const PORT = process.env.PORT || 4000;
 app.use(bodyParser.json());
 app.use(cors());
 
+// Root route
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
 // Configure Nodemailer
 const transporter = nodemailer.createTransport({
   secure: true,
