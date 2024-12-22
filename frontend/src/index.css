@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    height: 100vh;
+    /* background: #161513; */
+    color: white;
+    font-family: 'outfit';
+}
+
+html {
+    scroll-behavior: smooth;
+}
