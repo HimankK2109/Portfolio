@@ -17,8 +17,8 @@ const transporter = nodemailer.createTransport({
   secure: true,
   service: "gmail",
   auth: {
-    user: process.env.EMAIL_USER, // Your email from .env
-    pass: process.env.EMAIL_PASS, // Your email password from .env
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -28,7 +28,7 @@ app.post("/send-email", async (req, res) => {
 
   const mailOptions = {
     from: `"${name}" <${email}>`,
-    to: process.env.EMAIL_USER, // Your email to receive messages
+    to: process.env.EMAIL_USER,
     subject: "New Contact Form Submission",
     text: message,
     html: `
