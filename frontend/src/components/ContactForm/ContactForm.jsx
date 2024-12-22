@@ -37,7 +37,7 @@ function ContactForm() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/send-email",
+        "https://portfolio-production-b260.up.railway.app//send-email",
         data
       );
       setStatus("Message sent successfully!");
