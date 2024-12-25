@@ -27,13 +27,13 @@ function Footer() {
 
         {/* Social Media Links */}
         <div className="flex items-center justify-center space-x-6">
-          <a href="https://www.linkedin.com/in/himank-kumar-22039a253/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/himank-kumar-22039a253/">
             <FaLinkedin size={25} className="text-[#0A66C2]" />
           </a>
-          <a href="https://x.com">
+          <a target="_blank" rel="noopener noreferrer" href="https://x.com">
             <img src={Xlogo} alt="Logo" className="w-5 h-5" />
           </a>
-          <a href="https://www.instagram.com/himankkumar_7108/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/himankkumar_7108/">
             <FaInstagram size={25} className="text-[#E1306C]" />
           </a>
         </div>

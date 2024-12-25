@@ -48,7 +48,7 @@ function Hero() {
             Crafting dynamic and responsive web solutions as a passionate Full Stack Developer. I specialize in creating functional, scalable, and user-centric applications to bring ideas to life. Let's build something extraordinary together
             </motion.p>
             <motion.a variants={slideUp(1.5)} initial="initial" animate="animate"
-              href="https://drive.google.com/file/d/1NIHN3kHXmdMWNwEDVhcQx342ksHxOzPb/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1Rjc_nbcH8Xw8jAO2CoK5uBrRV3QKzWJt/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white z-20 rounded-full p-4 text-sm text-stone-800 mb-10 cursor-pointer hover:shadow-[0_0_50px_#ff4d00] hover:bg-orange-600 transition-all duration-300"
